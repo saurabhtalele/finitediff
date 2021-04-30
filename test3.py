@@ -32,7 +32,7 @@ def central():
     hs=dd
 
 #### order of error
-    err=input("order of error must be even number only：", type=NUMBER)
+    err=input("order of error must be even number 2 or 4 only：", type=NUMBER)
     put_text('order of error',(err))
     put_html('<hr>')
 #total number of points in cosideration    
