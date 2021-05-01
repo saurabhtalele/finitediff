@@ -38,7 +38,8 @@ def central():
 #total number of points in cosideration    
     put_text('please provide only integer number ')
     put_text('for error order result if its greter than this please relod web and try max limit integer number is equal or less than (in central diff scheme) in between ',-1*(dd+err-1)/2,'and ',(dd+err-1)/2)
-    Put_text('if for example -3.5 to 3.5 is shown limit then take max_limit and min_limit as -3 to 3 only neglect 0.5') 
+    put_html('<hr>') 
+    put_text('if for example -3.5 to 3.5 is shown limit then take max_limit and min_limit as -3 to 3 only neglect 0.5') 
     put_text('take limits from -3 to 3 for example ,so points in cosiderations are -3,-2,-1,0,1,2,3 total n is 7')
     
     n = input("number of points in cosideration：", type=NUMBER)
