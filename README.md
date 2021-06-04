@@ -10,4 +10,4 @@ Here finite differnce discritization is provided like
 
 so any differentiation scheme is provided forwrd,backwrd,central
 
-![alt text] (https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrEnch_l_d3djn8ZFImi63idvIIjQvpJUVAA&usqp=CAU) 
+
