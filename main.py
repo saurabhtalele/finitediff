@@ -13,7 +13,7 @@ import io
 from io import StringIO
 import string
 from pytexit import py2tex
-#import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 import argparse
 from pywebio import start_server
@@ -30,30 +30,31 @@ from test2 import *
 from test3 import *
 
 
-
 app = Flask(__name__)
 
+
 def bmi():
-    
-    defff_type = select('diferentiation scheme Type', ['forwrd', 'backwrd','central'])
+
+    defff_type = select('diferentiation scheme Type', [
+                        'forwrd', 'backwrd', 'central'])
     if (defff_type == 'forwrd'):
         defff_type = forwrd()
-        
+
     elif (defff_type == 'backwrd'):
         defff_type = backwrd()
-        
+
     elif (defff_type == 'central'):
         defff_type = central()
-    
-    bmi=deff_type
-     
+
+    bmi = deff_type
+
+
 app.add_url_rule('/tool', 'webio_view', webio_view(bmi),
-            methods=['GET', 'POST', 'OPTIONS'])  # need GET,POST and OPTIONS methods
+                 methods=['GET', 'POST', 'OPTIONS'])  # need GET,POST and OPTIONS methods
 
 # app.run(host='localhost', port=500)
 if __name__ == '__main__':
     import argparse
-
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--port", type=int, default=800)
